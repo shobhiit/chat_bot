@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">
+            <img src="{% static 'chatbot2.png' %}" alt="Chatbot Image" class="chatbot-image">
+            <div class="chatbot-info">
+                <h1>Chatbot Title</h1>
+                <p>Chatbot Description goes here. It can be a brief introduction or any relevant information.</p>
+                
+            </div>
+        </div>
+        
+        <div id="chat-log"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="{% static 'chatbot.js' %}"></script>
+</body>
+</html>
