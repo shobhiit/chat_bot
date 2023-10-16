@@ -1,28 +1,4 @@
 /* style.css */
-#chat-header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: #fff;
-}
-
-.chatbot-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    margin-right: 20px;
-}
-
-.chatbot-info {
-    flex-grow: 1;
-}
-
-#chat-log {
-    /* Existing styles for chat log */
-}
-
-/* Add more styles as needed */
 
 body {
     font-family: 'Arial', sans-serif;
@@ -31,8 +7,8 @@ body {
     background-color: #f4f4f4;
 }
 
-#chat-container {
-    max-width: 800px;
+.chat-container {
+    max-width: 850px;
     margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
@@ -40,46 +16,227 @@ body {
     overflow: hidden;
 }
 
-#chat-log {
+.chat-header {
+    display: flex;
+    align-items: center;
     padding: 20px;
-    height: 300px;
-    overflow-y: scroll;
-    border-bottom: 1px solid #ddd;
+    background-color: #4CAF50;
+    color: #fff;
 }
 
-#user-input {
+.chatbot-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.chatbot-info {
+    flex-grow: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.chatbot-description {
+    margin: 5px 0;
+}
+
+.welcome-message {
+    margin: 5px 0;
+}
+
+.logout-link {
+    color: #fff;
+   
+    margin-left: 640px; 
+   
+    display: block;
+    width: 80px;
+    padding: 8px;
+    background-color: #044c06;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+
+.chat-log {
+    padding: 20px;
+    height: 430px;
+    overflow-y: scroll;
+}
+
+
+.user-message {
+    background-color: #dcdcdc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.chatbot-message {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.user-input {
     width: calc(100% - 40px);
     padding: 10px;
     border: none;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    margin: 0 20px;
 }
 
-button {
-    width: calc(100% - 40px);
-    padding: 10px;
+.send-button {
+    width: 100px;
+    padding: 15px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
-    border-radius: 0 0 10px 10px;
-    margin: 0 20px;
+    border-radius: 10px 10px 10px 10px;
     cursor: pointer;
 }
 
-p {
-    margin: 5px 0;
+/* login */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-p:nth-child(odd) {
-    background-color: #f9f9f9;
+.login-title {
+    text-align: center;
+    color: #333;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 16px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
     padding: 10px;
-    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-p:nth-child(even) {
-    background-color: #4CAF50;
+.login-button {
+    background-color: #4caf50;
     color: #fff;
     padding: 10px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
 }
+
+.login-button:hover {
+    background-color: #45a049;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 16px;
+    color: #777;
+}
+
+.register-anchor {
+    color: #4caf50;
+}
+
+
+/* register */
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register-title {
+    text-align: center;
+    color: #333;
+}
+
+.register-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 16px;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.register-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.register-button:hover {
+    background-color: #45a049;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 16px;
+    color: #b4b4b4;
+}
+
+.login-anchor {
+    color: #4caf50;
+}
+/*loader*/

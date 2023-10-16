@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-e))luq1h-ag)&5_lm91(m$e9yt8onln$o+x8b1rvw&307x*2ip'
-
+api_key = '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'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chatbot',
+    
 ]
 
 MIDDLEWARE = [

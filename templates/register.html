@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+    <div class="register-container">
+        <h2 class="register-title">Register</h2>
+        
+        <form class="register-form" method="post" action="{% url 'register' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="register-button" type="submit">Register</button>
+        </form>
+
+        <p class="login-link">Already have an account? <a href="{% url 'login' %}" class="login-anchor">Login</a></p>
+    </div>
+
+{% endblock %}
